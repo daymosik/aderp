@@ -1,0 +1,87 @@
+// Colors
+$white: #fff;
+$blue: #00a8ff;
+
+$gray: #8d8d8d;
+$gray-light: #e6e6e6;
+
+$red: #ef0e06;
+
+$sidebar-bg: #20262d;
+
+$nav-pills-border-radius: none;
+$nav-pills-link-active-color: $white;
+$nav-pills-link-active-bg: rgba(255, 255, 255, 0.1);
+
+$nav-link-padding-y: 0.5rem !default;
+$nav-link-padding-x: 1rem !default;
+$nav-link-font-size: null !default;
+$nav-link-font-weight: null !default;
+$nav-link-color: rgba(255, 255, 255, 0.5);
+$nav-link-hover-color: $white;
+$nav-link-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
+
+// OLD
+
+// Screens
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+
+// Fonts
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-weight-semibold: 600;
+$font-weight-light: 300;
+
+// Brand
+$brand-primary: $blue;
+
+// Buttons
+$btn-primary-color: #fff !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: darken($btn-primary-bg, 5%) !default;
+
+$border-radius: 4px;
+
+// Sidebar
+$sidebar-width: 200px;
+$sidebar-width-closed: 50px;
+
+// Topbar
+$topbar-height: 50px;
+
+// Tabs
+$tabs-height: 50px;
+
+$transition-all: all 0.5s linear;
+$transition-opacity: opacity 0.5s linear;
+$transition-width: width 0.5s linear;
+$transition-padding-left: padding-left 0.5s linear;
+$transition-tabs-close-button: padding-right 0.5s linear;
+
+@mixin myErpLinearGradient($top, $bottom) {
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top),
+    color-stop(100%, $bottom)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
