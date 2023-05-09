@@ -6,4 +6,5 @@ export enum NavigationPath {
   Invoices = '/invoices',
   Results = '/results',
   Customers = '/customers',
+  Login = '/login',
 }

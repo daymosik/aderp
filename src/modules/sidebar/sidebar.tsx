@@ -1,4 +1,5 @@
 import SidebarNav from './sidebar-nav'
+import reactLogo from '../../assets/images/react.svg'
 
 function Sidebar() {
   return (
@@ -12,6 +13,8 @@ function Sidebar() {
         data-bs-original-title="Icon-only"
       >
         <span className="visually-hidden">Icon-only</span>
+
+        <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
       <SidebarNav />
       <div className="dropdown border-top">
